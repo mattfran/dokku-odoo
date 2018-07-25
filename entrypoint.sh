@@ -23,7 +23,6 @@ check_config "db_host" "$DB_HOST"
 check_config "db_port" "$DB_PORT"
 check_config "db_user" "$DB_USER"
 check_config "database" "$DB_NAME"
-check_config "db-filter" "$DB_NAME"
 check_config "db_password" "$DB_PASSWORD"
 
 case "$1" in
