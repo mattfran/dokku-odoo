@@ -9,7 +9,7 @@ RUN chown odoo /etc/odoo/odoo.conf
 RUN mkdir -p /mnt/extra-addons \
         && chown -R odoo /mnt/extra-addons
 
-RUN apt-get install -y --no-install-recommends procps
+RUN apt-get install -y procps
 
 USER odoo
 
