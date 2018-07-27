@@ -2,7 +2,7 @@ FROM odoo:11.0
 
 USER root
 
-ADD ./nginx.conf.sigil /app
+ADD ./nginx.conf.sigil /app/
 
 COPY ./entrypoint.sh /
 COPY ./odoo.conf /etc/odoo/
