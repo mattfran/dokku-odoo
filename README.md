@@ -1,6 +1,9 @@
 dokku-odoo
 ==========
 
+NOTE: If you get a strange screen and JS error after dokku deploy, run this SQL:
+DELETE FROM ir_attachment WHERE url LIKE '/web/content/%';
+
 A Odoo image ready to be deployed on dokku mini-PaaS
 
 Based on official docker-odoo image this image is just changing the exposed port to port 5000 to be ready to go with dokku defaults.
